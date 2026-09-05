@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squishy Prints</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Squishy Prints</div>
+
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#how">How It Works</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="tag">CUSTOM • SQUISHY • FUN</p>
+
+    <h1>Turn your ideas into squishies</h1>
+
+    <p>
+      Pick a design, send your idea, and get a custom squishy
+      made just for you.
+    </p>
+
+    <a class="button" href="#order">Start an Order</a>
+  </div>
+
+  <div class="hero-card">
+    SQUISHY
+    <span>PRINTS</span>
+  </div>
+</section>
+
+<section id="shop" class="section">
+
+  <h2>Shop</h2>
+
+  <div class="products">
+
+    <article class="product">
+      <div class="product-img">⭐</div>
+
+      <h3>Custom Squishy</h3>
+
+      <p>
+        Send us your idea and we'll make a custom squishy.
+      </p>
+
+      <strong>$8.99</strong>
+
+      <button onclick="selectProduct('Custom Squishy')">
+        Order This
+      </button>
+    </article>
+
+
+    <article class="product">
+      <div class="product-img">🍩</div>
+
+      <h3>Food Squishy</h3>
+
+      <p>
+        Pick a fun food inspired squishy design.
+      </p>
+
+      <strong>$7.99</strong>
+
+      <button onclick="selectProduct('Food Squishy')">
+        Order This
+      </button>
+    </article>
+
+
+    <article class="product">
+      <div class="product-img">🎨</div>
+
+      <h3>Mini Custom</h3>
+
+      <p>
+        A smaller custom squishy design.
+      </p>
+
+      <strong>$5.99</strong>
+
+      <button onclick="selectProduct('Mini Custom')">
+        Order This
+      </button>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="how" class="section light">
+
+  <h2>How It Works</h2>
+
+  <div class="steps">
+
+    <div>
+      <b>1</b>
+      <h3>Choose</h3>
+      <p>Pick the squishy you want.</p>
+    </div>
+
+    <div>
+      <b>2</b>
+      <h3>Customize</h3>
+      <p>Tell us what you want it to look like.</p>
+    </div>
+
+    <div>
+      <b>3</b>
+      <h3>Order</h3>
+      <p>A parent or guardian can help with payment.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="order" class="section">
+
+  <h2>Start Your Order</h2>
+
+  <form id="orderForm">
+
+    <label>
+      Product
+
+      <select id="product" required>
+
+        <option value="">
+          Choose one
+        </option>
+
+        <option>
+          Custom Squishy — $8.99
+        </option>
+
+        <option>
+          Food Squishy — $7.99
+        </option>
+
+        <option>
+          Mini Custom — $5.99
+        </option>
+
+      </select>
+
+    </label>
+
+
+    <label>
+      Your Design Idea
+
+      <textarea
+        id="idea"
+        placeholder="Tell us what you want..."
+        required
+      ></textarea>
+
+    </label>
+
+
+    <label>
+      Parent/Guardian Contact
+
+      <input
+        id="contact"
+        type="text"
+        placeholder="Parent email or contact method"
+        required
+      >
+
+    </label>
+
+
+    <button class="button" type="submit">
+      Send Order Request
+    </button>
+
+  </form>
+
+  <p id="message"></p>
+
+</section>
+
+
+<footer>
+
+  <p>© 2026 Squishy Prints</p>
+
+  <p>
+    Payments and final orders handled with a parent or guardian.
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
